@@ -1,0 +1,154 @@
+<html>
+<head> <title> ICT Personal Portfolio Website </title>
+<link rel="stylesheet" href="stylee.css"
+</head>
+
+<body> 
+<div id="header">
+<div class="container">
+<nav>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FUypFaeIQSG4nrI69C_7hp8qusqEJ5z0NOOaePA&s" class="logo">
+<ul>
+<li><a href="#header"> Home </a> </li>
+<li><a href="#about"> About </a> </li>
+<li><a href="#works"> Works </a> </li>
+<li><a href="#contact"> Contacts </a> </li>
+</ul>
+</nav>
+<div class="header-text">
+<p> ICT-9 Personal Portfolio Website</p>
+<h1> Hey there! I am <span> Shanley </span> <br> Sancho from Fire-9 
+</h1> 
+</div>
+</div>
+
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/441451143_1385875112804069_2036375407725747567_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RCDfc5CGbWsQ7kNvgFfhfqY&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QE0X8fkaLB3RzjT80tTjyC2yTxEcWgDqfmPQrEuTQg1KQ&oe=6671810C">
+</div>
+<div class="about-col-2">
+<h1 class="sub-title"> About me </h1>
+<p> I am a Grade 9 student from RTPM-DSHS. For our subject in ICT, we were tasked to make a personal portfolio website. This is my output. 
+
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+<p class="tab-links" onclick="opentab('hobbies')"> Hobbies </p>
+<p class="tab-links" onclick="opentab('me')"> About me </p>
+</div>
+
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li><span> HTML </span><br> Making websites</li>
+<li><span> CSS </span><br> Styling websites</li>
+<li><span> JAVASCRIPT </span><br> Complex Features</li>
+</ul>
+</div>
+
+<div class="tab-contents" id="hobbies">
+<ul>
+<li><span> 2018-2024 </span><br> Soccer </li>
+<li><span> 2016-2024 </span><br> Drawing </li>
+</ul>
+</div>
+
+<div class="tab-contents" id="me">
+<ul>
+<li><span> Age </span><br> 15 </li>
+<li><span> Birthday </span><br> November 04, 2008 </li>
+<li><span> Fave Color </span><br> Pink </li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+
+}
+for(tabcontent of tabcontents){
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<div id="works">
+<div class="container">
+<h1 class="sub-title"> My Work </h1>
+<div class="work-list"> </div>
+
+<div class="work">
+<img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t1.15752-9/441945354_411846984998940_7266776539233920432_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h842aHDwbh8Q7kNvgHuvWrB&_nc_ht=scontent.fceb1-4.fna&oh=03_Q7cD1QFZOoJLgp1mK_ZFUJmi82Endxq6zFBwATh5TbGB2CdK4g&oe=66719960">
+<div class="layer">
+<h3> HTML Iframes </h3>
+<p> The HTML iframe tag is used to embed a webpage within a webpage. It is also called an inline frame. </p>
+<a href="#"></a>
+</div>
+</div>
+
+<div class="work">
+<img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t1.15752-9/436421710_424565800488151_8654922488830523478_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ED5nWcwxWY8Q7kNvgG8z-aD&_nc_ht=scontent.fceb1-4.fna&oh=03_Q7cD1QEi0rqaRQINXBAYRY50z8prpKR-wqRIgEc06hgdaqmhhg&oe=667188F9">
+<div class="layer">
+<h3> HTML Forms </h3>
+<p> An HTML form is used to collect user input. The user input is most often sent to a server for processing. </p>
+<a href="#"></a>
+</div>
+</div>
+
+<div class="work">
+<img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/441126983_246219965250218_4164066870349104093_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7eF-514kooEQ7kNvgG8TDdM&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QE8gsNMUVZZy3XmXBiSkiw82pfHCU_NYKtP0RtAGjpaHg&oe=66718820">
+<div class="layer">
+<h3> CSS Activity </h3>
+<p> CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. </p>
+<a href="#"></a>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div id="contact"> 
+<div class="container"> 
+<div class="row"> 
+<div class="contact-left"> 
+<h1 class="sub-title"> Contact Me </h1>
+<p><i class="fas fa-paper-plane"></i> sgsancho04@gmail.com </p>
+<p><i class="fas fa-paper-plane"></i> 09956333150 </p>
+<div class="social-icons">
+<a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+<a href=""><i class="fa-brands fa-facebook"></i></a>
+<a href=""><i class="fa-brands fa-instagram"></i></a>
+<a href=""><i class="fa-brands fa-twitter"></i></a>
+</div>
+</div> 
+<div class="contact-right"> 
+<form>
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html> 
